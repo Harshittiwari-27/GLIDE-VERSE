@@ -1,0 +1,185 @@
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 80px;
+    gap: 40px;
+
+   
+}
+
+
+/* LEFT SECTION */
+
+.hero-left{
+    flex: 1;
+}
+
+.hero-left h1{
+    font-size: 90px;
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    margin-bottom: 30px;
+
+    color: white;
+    margin-left: 50px;
+}
+
+.hero-left h1 span{
+    background: linear-gradient(to right, red, orange);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.hero-left p{
+    font-size: 30px;
+
+    color: rgb(70, 70, 70);
+
+    max-width: 500px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+    color: rgba(255,255,255,0.7);
+     margin-left: 50px;
+}
+
+
+
+/* BUTTONS */
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+
+/* PRIMARY BUTTON */
+
+.shop-btn{
+    padding: 14px 32px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(to right, #ff2e2e, #ff6a00);
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0px 8px 20px rgba(255, 60, 0, 0.3);
+
+     margin-left: 50px;
+}
+
+.shop-btn:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0px 12px 25px rgba(255, 60, 0, 0.5);
+}
+
+
+/* SECONDARY BUTTON */
+
+.explore-btn{
+    padding: 14px 32px;
+
+    border-radius: 12px;
+    border: 1.5px solid rgb(180, 180, 180);
+
+    background-color: white;
+    color: rgb(6, 4, 4);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover{
+    background-color: black;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* RIGHT SECTION */
+
+.hero-right{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* BACKGROUND GLOW */
+
+.hero-right::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 250px;
+
+    background: rgba(255, 0, 0, 0.25);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    z-index: -1;
+}
+
+
+/* SHOE IMAGE */
+
+.hero-right img{
+    width: 400px;
+
+    object-fit: contain;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+
+
+/* FLOATING ANIMATION */
+
+@keyframes float{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}

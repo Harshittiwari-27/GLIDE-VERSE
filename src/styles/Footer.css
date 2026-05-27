@@ -1,0 +1,159 @@
+.footer{
+    background: #050505;
+
+    padding: 100px 80px 40px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.footer-top{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 60px;
+}
+
+.footer-brand h2{
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 60px;
+
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-brand h2 span{
+    background: linear-gradient(
+        to right,
+        #ff3131,
+        #8b5cf6,
+        #00c3ff
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-brand p{
+    color: rgba(255,255,255,0.65);
+
+    font-size: 17px;
+
+    max-width: 320px;
+
+    line-height: 1.8;
+}
+
+.footer-links h3,
+.footer-socials h3{
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 22px;
+}
+
+
+
+.footer-links ul{
+    list-style: none;
+}
+
+
+.footer-links li{
+    color: rgba(255,255,255,0.65);
+
+    margin-bottom: 14px;
+
+    cursor: pointer;
+
+    transition: 0.35s ease;
+}
+
+.footer-links li:hover{
+    color: #8b5cf6;
+
+    transform: translateX(5px);
+}
+
+
+.social-icons{
+    display: flex;
+
+    gap: 22px;
+
+    font-size: 30px;
+
+    color: rgba(255,255,255,0.7);
+}
+
+
+.social-icons svg{
+    cursor: pointer;
+
+    transition: 0.35s ease;
+}
+
+.social-icons svg:hover{
+    transform: translateY(-6px) scale(1.12);
+
+    color: #8b5cf6;
+
+    filter:
+    drop-shadow(
+        0px 0px 12px rgba(139,92,246,0.5)
+    );
+}
+
+
+.footer-bottom{
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    padding-top: 30px;
+
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: rgba(255,255,255,0.45);
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+
+@media(max-width: 768px){
+
+    .footer{
+        padding: 80px 30px 30px;
+    }
+
+    .footer-top{
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+    .footer-brand h2{
+        font-size: 48px;
+    }
+
+}
