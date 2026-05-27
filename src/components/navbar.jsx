@@ -45,7 +45,6 @@ const Navbar = () => {
 
     <>
 
-      {/* NAVBAR */}
 
       <nav>
 
@@ -54,10 +53,6 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
 
         </div>
-
-
-
-        {/* NAV LINKS */}
 
         <ul>
 
@@ -75,9 +70,6 @@ const Navbar = () => {
 
         </ul>
 
-
-
-        {/* LOGIN BUTTON */}
 
         <button
           className="login-btn"
