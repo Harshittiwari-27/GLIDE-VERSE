@@ -4,53 +4,6 @@
     overflow: hidden;
 }
 
-/* .collection h2{
-    font-size: 90px;
-    font-weight: 800;
-
-    margin-bottom: 50px;
-
-    text-align: center;
-} */
-/* 
-.collection h2{
-    font-family: 'Bebas Neue', sans-serif;
-
-    font-size: 65px;
-
-    letter-spacing: 2px;
-
-    color: #0f0f0f;
-     text-align: center;
-     margin-top: 50px;
-}
-
-.collection h2 span{
-    background: linear-gradient(to right, red, orange);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.collection p{
-    font-size: 18px;
-
-    color: #666;
-
-    letter-spacing: 1px;
-
-    margin-top: 30px;
-
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-.carousel-wrapper{
-    width: 100%;
-
-    overflow: hidden;
-} */
-
 
 
 .collection h2{
@@ -83,17 +36,12 @@
 }
 
 
-/* GRADIENT WORD */
-
 .collection h2 span{
     background: linear-gradient(
         to right,
-        /* #ff2e2e,
-        #ff6a00,
-        #ffb000 */
         #ffffff,
-#ff3131,
-#00c3ff
+        #ff3131,
+        #00c3ff
     );
 
     -webkit-background-clip: text;
@@ -225,12 +173,10 @@ backdrop-filter: blur(10px);
     color: white;
 }
 
-
 .card-content p{
-    color: gray;
+    color: rgba(255,255,255,0.7);
 
     margin-bottom: 15px;
-    color: rgba(255,255,255,0.7);
 }
 
 
